@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="HotChocolate" Version="11.1.0" />
     <PackageReference Include="HotChocolate.AspNetCore" Version="11.1.0" />
     <PackageReference Include="HotChocolate.AspNetCore.Playground" Version="10.5.5" />
     <PackageReference Include="HotChocolate.AspNetCore.Subscriptions" Version="10.5.5" />
