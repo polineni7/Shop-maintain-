@@ -16,7 +16,6 @@ using HotChocolate.Types;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using System.Text;
-using Microsoft.IdentityModel.Tokens;
 
 using shopkey.Models;
 using shopkey.Controllers;
@@ -42,11 +41,9 @@ namespace shopkey
 
             services
             .AddDbContext<ShopkeyContext>()
-
-
             .AddDataLoaderRegistry()
             .AddInMemorySubscriptions()
-             .AddGraphQL(sp =>
+            .AddGraphQL(sp =>
                   SchemaBuilder.New()
                       .AddServices(sp)
 
