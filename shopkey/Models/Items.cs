@@ -5,7 +5,7 @@ namespace shopkey.Models
 {
     public partial class Items
     {
-        public int Itemid { get; set; }
+        public int? Itemid { get; set; }
         public string Itemname { get; set; }
         public int? Grpid { get; set; }
         public string Uom { get; set; }

@@ -5,8 +5,8 @@ namespace shopkey.Models
 {
     public partial class Salesline
     {
-        public int Billno { get; set; }
-        public int Sno { get; set; }
+        public int? Billno { get; set; }
+        public int? Sno { get; set; }
         public int? Itemname { get; set; }
         public int? Qty { get; set; }
         public double? Rat { get; set; }

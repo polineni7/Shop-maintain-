@@ -5,7 +5,7 @@ namespace shopkey.Models
 {
     public partial class Purchaseslines
     {
-        public int Mir { get; set; }
+        public int? Mir { get; set; }
         public int Sno { get; set; }
         public int? Pitem { get; set; }
         public double? Rat { get; set; }

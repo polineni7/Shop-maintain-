@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
 using HotChocolate;
 using HotChocolate.Subscriptions;
 using HotChocolate.AspNetCore;
@@ -16,6 +15,7 @@ using HotChocolate.Types;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using System.Text;
+
 
 using shopkey.Models;
 using shopkey.Controllers;
@@ -48,11 +48,12 @@ namespace shopkey
                       .AddServices(sp)
 
                       .AddQueryType(d => d.Name("Query"))
-                      .AddType<Itemgroups>()
+                      .AddType<QueryClass>()
+               
 
 
-                        .AddMutationType(d => d.Name("Mutation"))
-                      .AddType<Items>()
+                      .AddMutationType(d => d.Name("Mutation"))
+                      .AddType<MutationClass>()
 
                        .AddAuthorizeDirectiveType()
                       .BindClrType<string, StringType>()

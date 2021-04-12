@@ -10,7 +10,7 @@ namespace shopkey.Models
             Purchaseslines = new HashSet<Purchaseslines>();
         }
 
-        public int Mir { get; set; }
+        public int? Mir { get; set; }
         public DateTime? Purchesesdate { get; set; }
         public string Suppliers { get; set; }
         public string Mobile { get; set; }

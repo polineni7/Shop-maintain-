@@ -10,10 +10,9 @@ namespace shopkey.Models
             Items = new HashSet<Items>();
         }
 
-        public int Grpid { get; set; }
+        public int? Grpid { get; set; }
         public string Grpname { get; set; }
         public string Maingrp { get; set; }
-
         public virtual ICollection<Items> Items { get; set; }
     }
 }

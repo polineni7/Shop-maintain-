@@ -11,7 +11,7 @@ namespace shopkey.Models
             Salesline = new HashSet<Salesline>();
         }
 
-        public int Itemid { get; set; }
+        public int? Itemid { get; set; }
         public double? Rat { get; set; }
 
         public virtual Items Item { get; set; }

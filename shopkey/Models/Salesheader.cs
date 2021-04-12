@@ -10,7 +10,7 @@ namespace shopkey.Models
             Salesline = new HashSet<Salesline>();
         }
 
-        public int Billno { get; set; }
+        public int? Billno { get; set; }
         public DateTime? Salesdate { get; set; }
         public string Cname { get; set; }
         public string Mobile { get; set; }
